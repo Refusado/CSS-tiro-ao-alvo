@@ -1,0 +1,78 @@
+:root {
+   --hitA:
+      hit 1000ms cubic-bezier(0,.77,.55,.79) forwards,
+      hit-returnA 1000ms var(--return-time-1) cubic-bezier(0,.77,.55,.79) forwards;
+
+   --hitB:
+      hitB 1000ms cubic-bezier(0,.77,.55,.79) forwards,
+      hit-returnB 1000ms var(--return-time-1) cubic-bezier(0,.77,.55,.79) forwards;
+
+      
+   --show-areaA:
+      show-areaA var(--return-time-1) 0ms;
+
+   --show-areaB:
+      show-areaB var(--return-time-1) 0ms;
+}
+
+@keyframes hit {
+   0% {
+      transform-origin: bottom;
+      transform: rotatex(0);
+   }
+   100% {
+      transform: rotateX(90deg);
+      transform-origin: bottom;
+   }
+}
+@keyframes hit-returnA {
+   0% {
+      transform-origin: bottom;
+      transform: rotateX(90deg);
+   }
+   100% {
+      transform: rotatex(0);
+      transform-origin: bottom;
+   }
+}
+@keyframes hitB {
+   0% {
+      transform-origin: bottom;
+      transform: rotatex(0);
+   }
+   100% {
+      transform: rotateX(90deg);
+      transform-origin: bottom;
+   }
+}
+@keyframes hit-returnB {
+   0% {
+      transform-origin: bottom;
+      transform: rotateX(90deg);
+   }
+   100% {
+      transform: rotatex(0);
+      transform-origin: bottom;
+   }
+}
+
+@keyframes show-areaA {
+   0%, 100% {
+      width: var(--target-container-width);
+      height: var(--target-area-height);
+   }
+   0.1%, 99.9% {
+      width: 0;
+      height: 0;
+   }
+}
+@keyframes show-areaB {
+   0%, 100% {
+      width: var(--target-container-width);
+      height: var(--target-area-height);
+   }
+   0.1%, 99.9% {
+      width: 0;
+      height: 0;
+   }
+}
