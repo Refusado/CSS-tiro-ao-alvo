@@ -1,39 +1,39 @@
 
 :root {
-   --target-size-1: 150px;
-   --return-time-1: 7800ms;
-   --px-1: calc(64% - var(--target-size-1) / 2);
-   --py-1: calc(53% - var(--target-size-1) / 2);
+   --target-size-1: 180px;
+   --return-time-1: 17100ms;
+   --px-1: calc(13% - var(--target-size-1) / 2);
+   --py-1: calc(21% - var(--target-size-1) / 2);
 
    --target-size-2: 180px;
    --return-time-2: 6800ms;
-   --px-2: calc(75% - var(--target-size-1) / 2);
-   --py-2: calc(76% - var(--target-size-1) / 2);
+   --px-2: calc(37% - var(--target-size-1) / 2);
+   --py-2: calc(35% - var(--target-size-1) / 2);
 
-   --target-size-3: 230px;
+   --target-size-3: 180px;
    --return-time-3: 11800ms;
-   --px-3: calc(77% - var(--target-size-1) / 2);
-   --py-3: calc(19% - var(--target-size-1) / 2);
+   --px-3: calc(63% - var(--target-size-1) / 2);
+   --py-3: calc(43% - var(--target-size-1) / 2);
 
    --target-size-4: 180px;
-   --return-time-4: 9100ms;
-   --px-4: calc(14% - var(--target-size-1) / 2);
-   --py-4: calc(68% - var(--target-size-1) / 2);
+   --return-time-4: 9500ms;
+   --px-4: calc(82% - var(--target-size-1) / 2);
+   --py-4: calc(17% - var(--target-size-1) / 2);
 
    --target-size-5: 180px;
-   --return-time-5: 16800ms;
-   --px-5: calc(41% - var(--target-size-1) / 2);
-   --py-5: calc(58% - var(--target-size-1) / 2);
+   --return-time-5: 13800ms;
+   --px-5: calc(17% - var(--target-size-1) / 2);
+   --py-5: calc(73% - var(--target-size-1) / 2);
 
-   --target-size-6: 230px;
-   --return-time-6: 18800ms;
-   --px-6: calc(20% - var(--target-size-1) / 2);
-   --py-6: calc(18% - var(--target-size-1) / 2);
+   --target-size-6: 180px;
+   --return-time-6: 15100ms;
+   --px-6: calc(41% - var(--target-size-1) / 2);
+   --py-6: calc(65% - var(--target-size-1) / 2);
 
    --target-size-7: 180px;
-   --return-time-7: 21800ms;
-   --px-7: calc(52% - var(--target-size-1) / 2);
-   --py-7: calc(18% - var(--target-size-1) / 2);
+   --return-time-7: 8100ms;
+   --px-7: calc(78% - var(--target-size-1) / 2);
+   --py-7: calc(69% - var(--target-size-1) / 2);
 }
 
 * {
@@ -45,22 +45,22 @@
 }
 body {
    width: 100vw;
-   height: 100vh;
-   background-color: #96d4cd;
+   height: 100vh; 
+   background-color: #3f2867;
    box-shadow: inset 0px 0px 350px -250px black;
    display: flex;
    justify-content: center;
    align-items: center;
 }
 .main-container {
-   background-color: #385d75;
+   background-color: #605882;
    border: 1vw solid #432506;
    box-shadow: inset 0px 0px 350px -250px black,
    inset 0px 0px 12px -8px black
    ;
    border-radius: .3vw;
-   width: 92vw;
-   height: 92vh;
+   width: 96vw;
+   height: 96vh;
    cursor: crosshair;
 }
 .target-container {
